@@ -1,0 +1,26 @@
+
+        
+
+  <form (ngSubmit)="onSubmit()" enctype="multipart/form-data">
+    <input type="text" name="name" [(ngModel)]="car.name" placeholder="Car Name" required>
+    <input type="text" name="price" [(ngModel)]="car.price" placeholder="Car Price" required>
+    <input type="file" (change)="onFileChange($event)" required>
+    <button type="submit">Save</button>
+    
+  </form>
+
+      <!-- <div class="card m-3">
+        <h5 class="card-header">Car Image Upload</h5>
+        <div class="card-body">
+          <form >
+            <input type="file" (change)="onFileSelected($event)" accept="image/*">
+            <button (click)="upload()" [disabled]="!selectedFile">Upload</button>
+            <div *ngIf="selectedFile" class="selected-file">
+              Selected File: {{ selectedFile.name }}
+            </div>
+          </form>
+        </div>
+      </div> -->
+
+         
+  
